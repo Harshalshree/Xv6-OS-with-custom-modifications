@@ -7,17 +7,14 @@ main(int argc, char *argv[])
 {
   int i;
 
-  if(argc < 2){
-    printf(2, "Usage: rm files...\n");
+  if(argc <= 1){
+    printf(1, "Usage: %s words", argv[0]);
     exit();
   }
 
   for(i = 1; i < argc; i++){
-    if(unlink(argv[i]) < 0){
-      printf(2, "rm: %s failed to delete\n", argv[i]);
-      break;
-    }
+      printf(1, "%s ", argv[i]);
   }
-
+  printf(1,"\n");
   exit();
 }
