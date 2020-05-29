@@ -88,6 +88,7 @@ allocproc(void)
 found:
   p->state = EMBRYO;
   p->pid = nextpid++;
+  p->priority = 10;
 
   release(&ptable.lock);
 
@@ -554,3 +555,17 @@ for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
 release(&ptable.lock);
 return 22;
 }
+int chpr(int pid, int priority)
+{
+	struct proc *p;
+	acquire(&ptable.lock);
+	for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+		if(p->pid == pid){
+			p->priority = priority;
+			break;
+		}
+	}
+	release(&ptable.lock);
+	return pid;
+}
+

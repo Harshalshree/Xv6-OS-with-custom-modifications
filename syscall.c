@@ -128,6 +128,7 @@ static int (*syscalls[])(void) = {
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
 [SYS_cps]     sys_cps,
+[SYS_chpr]    sys_chpr,
 };
 
 void
