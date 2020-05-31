@@ -10,7 +10,7 @@ Running Instructions:
   2. make qemu-nox
   
  For more info on the code, you can head to my medium post:
- ["Click here for the medium post"] (https://medium.com/@harshalshree03/xv6-implementing-ps-nice-system-calls-and-priority-scheduling-b12fa10494e4?source=friends_link&sk=64940cd850e9ef493b38a3264a1c6ad7 "Medium Post")
+ https://medium.com/@harshalshree03/xv6-implementing-ps-nice-system-calls-and-priority-scheduling-b12fa10494e4?source=friends_link&sk=64940cd850e9ef493b38a3264a1c6ad7
  
   
  The original README is kept intact:
