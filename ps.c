@@ -4,6 +4,6 @@
 #include "fcntl.h"
 
 int main(void){
-cps();
-exit();
+  cps();
+  exit();
 }
